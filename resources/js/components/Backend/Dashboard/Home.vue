@@ -47,21 +47,12 @@
 import Header from './Header.vue';
 import Sidebar from './Sidebar.vue';
 import PageHeader from './PageHeader.vue';
-// import Footer from './Footer';
 
 export default {
     components:{
-        // HomeContent:HomeContent,
-        // Header:Header,
         Header:Header,
         Sidebar:Sidebar,
         PageHeader:PageHeader,
-        // Footer:Footer,
-    },
-    data() {
-        return {
-
-        }
     },
 }
 </script>
