@@ -5,12 +5,20 @@
                     <div class="pcoded-navigation-label">Dashboard</div>
                     <ul class="pcoded-item pcoded-left-item">
                         <li class="">
-                            <a href="" class="waves-effect waves-dark">
+                            <router-link to="/" class="waves-effect waves-dark">
                                 <span class="pcoded-micon">
                                     <i class="feather icon-menu"></i>
                                 </span>
                                 <span class="pcoded-mtext">Dashboard</span>
-                            </a>
+                            </router-link>
+                        </li>
+                        <li class="">
+                            <router-link to="/about" class="waves-effect waves-dark">
+                                <span class="pcoded-micon">
+                                    <i class="feather icon-menu"></i>
+                                </span>
+                                <span class="pcoded-mtext">Dashboard</span>
+                            </router-link>
                         </li>
                         <li class="pcoded-hasmenu">
                             <a href="javascript:void(0)" class="waves-effect waves-dark">
