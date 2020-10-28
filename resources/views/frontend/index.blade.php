@@ -38,9 +38,9 @@
 
 <body class="cnt-home">
 
-    <div id="app">
+    {{-- <div id="app">
         <website-component></website-component>
-    </div>
+    </div> --}}
 
     <!-- JavaScripts placed at the end of the document so the pages load faster -->
     {{-- <script src="{{ asset('frontend') }}/assets/js/jquery-1.11.1.min.js"></script> --}}

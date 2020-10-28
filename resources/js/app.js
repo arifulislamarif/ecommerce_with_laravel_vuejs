@@ -2,10 +2,12 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-// Vue.component('website-component', require('./components/Frontend/Main/Index.vue').default);
 
-// component
+// Frontend component
 import Index from './components/Frontend/Main/Index.vue';
+
+// Backend component
+import Home from './components/Backend/Dashboard/Home.vue';
 
 // router
 import router from './router';
@@ -107,5 +109,6 @@ const app = new Vue({
 
     components: {
         'website-component': Index,
+        'backend-component': Home,
     }
 });
