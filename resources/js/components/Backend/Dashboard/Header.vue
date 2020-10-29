@@ -56,7 +56,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="auth-sign-in-social.html">
+                                            <a role="button" @click.prevent="logout" href="auth-sign-in-social.html">
                                                 <i class="feather icon-log-out"></i> Logout
                                             </a>
                                         </li>
@@ -68,3 +68,16 @@
                 </div>
             </nav>
 </template>
+
+<script>
+export default {
+  methods: {
+     logout(){
+        axios.post('/logoutt')
+        .then(response => {
+          window.location.href = "/login";
+        })
+      }
+  },
+}
+</script>

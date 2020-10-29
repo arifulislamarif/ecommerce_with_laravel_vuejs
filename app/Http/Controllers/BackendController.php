@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class BackendController extends Controller
 {
 
-    public function index()
+    public function admin()
     {
-        return view('backend.index');
+        return view('backend.admin');
     }
 }

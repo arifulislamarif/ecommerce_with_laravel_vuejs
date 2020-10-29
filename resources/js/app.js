@@ -1,35 +1,61 @@
-// bootstrap
-// require('./bootstrap');
-
 window.Vue = require('vue');
+window.axios = require('axios');
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window._ = require('lodash');
 
 // Frontend component
-import Index from './components/Frontend/Main/Index.vue';
+// import Website from './components/layouts/Website.vue';
 
 // Backend component
-import Home from './components/Backend/Dashboard/Home.vue';
+import Admin from './components/layouts/Admin.vue';
 
 // router
 import router from './router';
 
 // vuex
-// import Vuex from 'vuex'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+import vuex from './vuex';
+const store = new Vuex.Store(vuex);
 
-// Vue.use(Vuex)
-// import vuex from './vuex';
-// const store = new Vuex.Store(vuex);
+// Vform
+import { Form, HasError, AlertError } from 'vform'
+window.Form = Form;
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
 
+// Moment js
+import {moment} from './moment'
 
+// Sweet alert
+import Swal from 'sweetalert2'
+window.Swal = Swal;
 
-        //----------- Moment js Start----------------
-        //   import {moment} from './moment'
-        //----------- Moment js End----------------
+// vue Tostification
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
+const options = {
+    position: "top-right",
+    timeout: 5000,
+    closeOnClick: true,
+    pauseOnFocusLoss: false,
+    pauseOnHover: true,
+    draggable: true,
+    draggablePercent: 0.6,
+    showCloseButtonOnHover: false,
+    hideProgressBar: false,
+    closeButton: "button",
+    icon: true,
+    transition: "Vue-Toastification__slideBlurred",
+    maxToasts: 10,
+    newestOnTop: true
+};
+Vue.use(Toast, options);
+window.Toast = Toast;
 
-        //----------- Ck Editor Start----------------
-            // import CKEditor from '@ckeditor/ckeditor5-vue';
-
-            // Vue.use( CKEditor );
-        //----------- Ck Editor End----------------
+// CK Editor
+// import CKEditor from '@ckeditor/ckeditor5-vue';
+// Vue.use( CKEditor );
 
         //----------- Bootstrap Vue Dropdown Start----------------
             // import Vue from 'vue'
@@ -41,74 +67,17 @@ import router from './router';
             // Vue.use(IconsPlugin)
         //----------- Bootstrap Vue End----------------
 
-        //----------- Vue Dropdown Start----------------
-
-        //----------- Vue Dropdown End----------------
 
 
-
-        //----------- vue Vform Start----------------
-
-            // import { Form, HasError, AlertError } from 'vform'
-
-            // window.Form = Form;
-
-            // Vue.component(HasError.name, HasError)
-            // Vue.component(AlertError.name, AlertError)
-
-        //----------- vue Vform End----------------
-
-        //----------- vue Progressbar Start----------------
-
-        // import VueProgressBar from 'vue-progressbar'
-
-        //     Vue.use(VueProgressBar, {
-        //         color: '#2ecc71',
-        //         failedColor: '#874b4b',
-        //         thickness: '10px',
-        //         transition: {
-        //             speed: '0.2s',
-        //             opacity: '0.6s',
-        //             termination: 300
-        //         },
-        //         autoRevert: true,
-        //         location: 'top',
-        //         inverse: false
-        //     })
-
-        //----------- vue Progressbar end----------------
-
-        //-------- sweet alert  start----------
-        // import Swal from 'sweetalert2'
-        // window.Swal = Swal;
-
-        // const Toast = Swal.mixin({
-        //     toast: true,
-        //     position: 'top-end',
-        //     showConfirmButton: false,
-        //     timer: 3000,
-        //     timerProgressBar: true,
-        //     didOpen: (toast) => {
-        //     toast.addEventListener('mouseenter', Swal.stopTimer)
-        //     toast.addEventListener('mouseleave', Swal.resumeTimer)
-        //     }
-        // })
-
-        // window.Toast = Toast;
-
-        //--------------- sweet alert  end -------------
-
-
-// vue pagination
-// Vue.component('pagination', require('laravel-vue-pagination'));
+        // vue pagination
+        // Vue.component('pagination', require('laravel-vue-pagination'));
 
 const app = new Vue({
     el: '#app',
     router,
-    // store,
-
+    store,
     components: {
-        'website-component': Index,
-        'backend-component': Home,
+        // 'website-component': Website,
+        'backend-component': Admin,
     }
 });

@@ -55,12 +55,12 @@
 
     <script type="d2d1d6e2f87cbebdf4013b26-text/javascript" src="{{ asset('backend') }}/js/jquery.slimscroll.js"></script>
 
-    <script src="{{ asset('backend') }}/js/jquery.flot.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
-    <script src="{{ asset('backend') }}/js/jquery.flot.categories.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
-    <script src="{{ asset('backend') }}/js/curvedlines.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
-    <script src="{{ asset('backend') }}/js/jquery.flot.tooltip.min.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
+    {{-- <script src="{{ asset('backend') }}/js/jquery.flot.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script> --}}
+    {{-- <script src="{{ asset('backend') }}/js/jquery.flot.categories.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script> --}}
+    {{-- <script src="{{ asset('backend') }}/js/curvedlines.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script> --}}
+    {{-- <script src="{{ asset('backend') }}/js/jquery.flot.tooltip.min.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script> --}}
 
-    <script src="{{ asset('backend') }}/js/chartist.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
+    {{-- <script src="{{ asset('backend') }}/js/chartist.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script> --}}
 
     <script src="{{ asset('backend') }}/js/amcharts.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
     <script src="{{ asset('backend') }}/js/serial.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
@@ -73,7 +73,7 @@
     <script type="d2d1d6e2f87cbebdf4013b26-text/javascript" src="{{ asset('backend') }}/js/script.min.js"></script>
 
 
-    <script type="d2d1d6e2f87cbebdf4013b26-text/javascript">
+    {{-- <script type="d2d1d6e2f87cbebdf4013b26-text/javascript">
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -82,7 +82,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-23581568-13');
-    </script>
+    </script> --}}
     <script src="{{ asset('backend') }}/js/rocket-loader.min.js" data-cf-settings="d2d1d6e2f87cbebdf4013b26-|49" defer=""></script>
 </body>
 

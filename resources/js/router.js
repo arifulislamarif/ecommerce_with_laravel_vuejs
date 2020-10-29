@@ -2,37 +2,30 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 //--------------------------- Backend component ---------------------------
-import HomeContent from './components/Backend/Dashboard/HomeContent';
-import About from './components/Backend/Dashboard/About';
-
-//--------------------------- Frontend component ---------------------------
-    import IndexContent from './components/Frontend/Main/IndexContent';
-    // import About from './components/Backend/Dashboard/About';
+// import Website from './components/Frontend/Main/WebsiteContent.vue'
+import AdminContent from './components/Backend/Dashboard/AdminContent.vue';
+import Category from './components/Backend/Category/Category.vue';
 
 Vue.use(VueRouter)
 
 const routes = [
 
-    //------------------------- Frontend Routes-------------
+    //------------------------- Backend Routes---------------------------------------------------
     {
-        path: '/',
-        component: IndexContent
+        path: '/admin',
+        component: AdminContent
+    },
+    {
+        path: '/category',
+        component: Category
     },
     // {
     //     path: '/',
-    //     component: About
+    //     component: Website
     // },
-
-    //------------------------- Backend Routes-------------
-    {
-        path: '/',
-        component: HomeContent
-    },
-    {
-        path: '/about',
-        component: About
-    },
 ]
 
-
-export default new VueRouter({ routes })
+export default new VueRouter({
+    mode: 'history',
+    routes
+});
