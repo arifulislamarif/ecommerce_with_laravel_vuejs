@@ -2625,7 +2625,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.light-sidebar-nav ul.sidebar-menu > li > .router-link-exact-active, .light-sidebar-nav ul.sidebar-menu > li > .router-link-exact-active:hover,\n.light-sidebar-nav ul.sidebar-menu > li > .router-link-exact-active:focus {\n    /* background: rgba(237, 77, 83, .06);\n    border-left: 3px solid #ff6c60;\n    color: #ff6c60;\n    border-radius: 0 40px 40px 0;\n    font-weight: bold;\n    font-size: 15px; */\n        background: #1d2531;\n    color: #b7c0cd;\n}\n\n", ""]);
+exports.push([module.i, "\n.light-sidebar-nav ul.sidebar-menu > li > .router-link-exact-active, .light-sidebar-nav ul.sidebar-menu > li > .router-link-exact-active:hover,\r\n.light-sidebar-nav ul.sidebar-menu > li > .router-link-exact-active:focus {\r\n    /* background: rgba(237, 77, 83, .06);\r\n    border-left: 3px solid #ff6c60;\r\n    color: #ff6c60;\r\n    border-radius: 0 40px 40px 0;\r\n    font-weight: bold;\r\n    font-size: 15px; */\r\n        background: #1d2531;\r\n    color: #b7c0cd;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -47749,7 +47749,7 @@ var render = function() {
                       [
                         _c("i", { staticClass: "feather icon-log-out" }),
                         _vm._v(
-                          " Logout\n                                            "
+                          " Logout\r\n                                            "
                         )
                       ]
                     )
@@ -47863,7 +47863,7 @@ var staticRenderFns = [
     return _c("li", [
       _c("a", { attrs: { href: "#!" } }, [
         _c("i", { staticClass: "feather icon-settings" }),
-        _vm._v(" Settings\n                                            ")
+        _vm._v(" Settings\r\n                                            ")
       ])
     ])
   },
@@ -47874,7 +47874,7 @@ var staticRenderFns = [
     return _c("li", [
       _c("a", { attrs: { href: "#" } }, [
         _c("i", { staticClass: "feather icon-user" }),
-        _vm._v(" Profile\n                                            ")
+        _vm._v(" Profile\r\n                                            ")
       ])
     ])
   }
@@ -67079,8 +67079,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\PC-2\Desktop\ecommerce project\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\PC-2\Desktop\ecommerce project\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Arif\Desktop\laravel ecommerce\ecommerce_with_laravel_vuejs\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Arif\Desktop\laravel ecommerce\ecommerce_with_laravel_vuejs\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
