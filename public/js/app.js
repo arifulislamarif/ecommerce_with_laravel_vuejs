@@ -47916,7 +47916,7 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "waves-effect waves-dark",
-                  attrs: { to: "/admin" }
+                  attrs: { to: "/home" }
                 },
                 [
                   _c("span", { staticClass: "pcoded-micon" }, [
@@ -47940,7 +47940,7 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "waves-effect waves-dark",
-                  attrs: { to: "/admin/category" }
+                  attrs: { to: "/category" }
                 },
                 [
                   _c("span", { staticClass: "pcoded-micon" }, [
@@ -47964,7 +47964,7 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "waves-effect waves-dark",
-                  attrs: { to: "/admin/subcategory" }
+                  attrs: { to: "/subcategory" }
                 },
                 [
                   _c("span", { staticClass: "pcoded-micon" }, [
@@ -66990,13 +66990,13 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var routes = [//------------------------- Backend Routes---------------------------------------------------
 {
-  path: '/admin',
+  path: '/home',
   component: _components_Backend_Dashboard_AdminContent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }, {
-  path: '/admin/category',
+  path: '/category',
   component: _components_Backend_Category_Category_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
 }, {
-  path: '/admin/subcategory',
+  path: '/subcategory',
   component: _components_Backend_SubCategory_SubCategory__WEBPACK_IMPORTED_MODULE_4__["default"]
 } // {
 //     path: '/',

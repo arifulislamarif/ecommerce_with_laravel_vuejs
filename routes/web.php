@@ -13,7 +13,7 @@ Route::post('/logoutt', function(){
     Auth::logout();
 });
 
-Route::middleware(['auth'])->prefix('admin')->group(function () {
+Route::middleware(['auth'])->prefix('home')->group(function () {
     Route::get('/', [BackendController::class, 'admin'])->name('home');
 });
 

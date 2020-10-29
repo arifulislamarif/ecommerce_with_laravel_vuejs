@@ -13,15 +13,15 @@ const routes = [
 
     //------------------------- Backend Routes---------------------------------------------------
     {
-        path: '/admin',
+        path: '/home',
         component: AdminContent
     },
     {
-        path: '/admin/category',
+        path: '/category',
         component: Category
     },
     {
-        path: '/admin/subcategory',
+        path: '/subcategory',
         component: SubCategory
     },
     // {

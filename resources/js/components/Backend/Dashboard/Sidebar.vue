@@ -5,7 +5,7 @@
                     <div class="pcoded-navigation-label">Website</div>
                     <ul class="pcoded-item pcoded-left-item">
                         <li class="">
-                            <router-link to="/admin" class="waves-effect waves-dark">
+                            <router-link to="/home" class="waves-effect waves-dark">
                                 <span class="pcoded-micon">
                                     <i class="feather icon-menu"></i>
                                 </span>
@@ -13,7 +13,7 @@
                             </router-link>
                         </li>
                         <li class="">
-                            <router-link to="/admin/category" class="waves-effect waves-dark">
+                            <router-link to="/category" class="waves-effect waves-dark">
                                 <span class="pcoded-micon">
                                     <i class="feather icon-menu"></i>
                                 </span>
@@ -21,7 +21,7 @@
                             </router-link>
                         </li>
                         <li class="">
-                            <router-link to="/admin/subcategory" class="waves-effect waves-dark">
+                            <router-link to="/subcategory" class="waves-effect waves-dark">
                                 <span class="pcoded-micon">
                                     <i class="feather icon-menu"></i>
                                 </span>
