@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 // import Website from './components/Frontend/Main/WebsiteContent.vue'
 import AdminContent from './components/Backend/Dashboard/AdminContent.vue';
 import Category from './components/Backend/Category/Category.vue';
+import SubCategory from './components/Backend/SubCategory/SubCategory';
 
 Vue.use(VueRouter)
 
@@ -16,8 +17,12 @@ const routes = [
         component: AdminContent
     },
     {
-        path: '/category',
+        path: '/admin/category',
         component: Category
+    },
+    {
+        path: '/admin/subcategory',
+        component: SubCategory
     },
     // {
     //     path: '/',

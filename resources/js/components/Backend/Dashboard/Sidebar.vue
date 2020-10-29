@@ -13,11 +13,19 @@
                             </router-link>
                         </li>
                         <li class="">
-                            <router-link to="/category" class="waves-effect waves-dark">
+                            <router-link to="/admin/category" class="waves-effect waves-dark">
                                 <span class="pcoded-micon">
                                     <i class="feather icon-menu"></i>
                                 </span>
                                 <span class="pcoded-mtext">Category</span>
+                            </router-link>
+                        </li>
+                        <li class="">
+                            <router-link to="/admin/subcategory" class="waves-effect waves-dark">
+                                <span class="pcoded-micon">
+                                    <i class="feather icon-menu"></i>
+                                </span>
+                                <span class="pcoded-mtext">SubCategory</span>
                             </router-link>
                         </li>
                         <li class="pcoded-hasmenu">
